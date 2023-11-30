@@ -7,6 +7,5 @@ if __name__ == "__main__":
 	print("0 arguments.")
     elif n > 1:
         print(f"{n} arguments:")
-	for i in range(0, n):
-            if i != 0:
+	for i in range(1, n + 1):
                 print({i}: {sys.argv[i]})
