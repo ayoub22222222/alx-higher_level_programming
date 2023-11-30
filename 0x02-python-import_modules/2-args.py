@@ -8,4 +8,4 @@ if __name__ == "__main__":
     elif n > 1:
         print(f"{n} arguments:")
 	for i in range(1, n + 1):
-            print(f"{i}: {sys.argv[i]")
+            print("{}: {}".format(i, sys.argv[i))
