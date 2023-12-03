@@ -7,4 +7,4 @@ def multiple_returns(sentence):
     else:
         for _ in sentence:
             counter += 1
-    return counter, sentence[0]
+        return counter, sentence[0]
