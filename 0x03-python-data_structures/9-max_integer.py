@@ -6,6 +6,9 @@ def max_integer(my_list=[]):
     if len(my_list) == 0:
 	return
 
+    elif len(my_list) == 1:
+        return my_list[i]
+
 
     while i < len(my_list) and j < len(my_list):
         if (my_list[i] >= my_list[j]) and (my_list[i] >= max_value):
