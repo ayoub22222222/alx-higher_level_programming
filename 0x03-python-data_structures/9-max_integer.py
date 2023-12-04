@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def max_integer(my_list=[]):
+def max_integer(my_list = []):
     i = 0
     j = 1
     max_value = 0
