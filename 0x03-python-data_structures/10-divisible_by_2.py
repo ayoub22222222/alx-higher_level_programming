@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 
 def divisible_by_2(my_list=[]):
-    new_l = my_list.copy()
+    r_list = my_list[:]
     for i in range(0, len(my_list)):
         if my_list[i] % 2 == 0:
-            new_l[i] = 1
+            r_list[i] = 1
         else:
-            new_l[i] = 0
-    return new_l
+            r_list[i] = 0
+    return r_list
