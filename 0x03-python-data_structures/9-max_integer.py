@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def max_integer(my_list=[]):
 	i = 0
 	j = 1
@@ -11,6 +12,6 @@ def max_integer(my_list=[]):
 			max_value = my_list[i]
 		elif (my_list[j] >= my_list[i]) and (my_list[j] >= max_value):
 			max_value = my_list[j]
-		i += 1 
+		i += 1
 		j += 1
 	return max_value
