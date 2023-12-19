@@ -4,8 +4,7 @@
 
 
 class Square:
-    """check if the size match 
-        with the requerment"""
+    """check if the size match with the requerment"""
     def __init__(self, size=0):
         self.__size = size
         if type(self.__size) != int:
