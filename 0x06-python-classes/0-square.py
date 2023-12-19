@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Task"""
+"""this is an empty class call square"""
+
+
 class Square:
-    """This is an empty class"""
+    """empty"""
     pass
