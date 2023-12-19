@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""Defines an empty square class"""
+""" this a function that create
+    rectangle and its empty """
 class Square:
-    """ this is actullay empty """
+    """ this is an empty class """
     pass
-
