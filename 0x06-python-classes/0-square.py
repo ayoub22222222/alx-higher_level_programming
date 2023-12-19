@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-"""this a function that create rectangle and its empty"""
+"""Task"""
+
 
 class Square:
-    """this is an empty class"""
+    """This is an empty class"""
     pass
