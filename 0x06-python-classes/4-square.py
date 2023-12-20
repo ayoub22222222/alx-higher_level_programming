@@ -20,15 +20,15 @@ class Square:
     @property
     def size(self):
         """return the size value"""
-        if type(self.__size) != int:
-            raise TypeError("size must be an integer")
-        elif slef.__size < 0:
-            raise ValueError("size must be >= 0")
-        else:
             return self.__size
 
     @__size.Setter
     def size(self, size):
         """update the private attribute"""
-        return self.__size = size
+        if type(self.__size) != int:
+            raise TypeError("size must be an integer")
+        elif self.__size < 0:
+            raise ValueError("size must be >= 0")
+        else:
+            return self.__size = size
 
