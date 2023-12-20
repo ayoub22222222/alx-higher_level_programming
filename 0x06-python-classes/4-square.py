@@ -1,28 +1,26 @@
 #!/usr/bin/python3
-"""make some change on the private attribute"""
+"""class that create a rectangle"""
 
 
 class Square:
-    """check if the size match with the requerment"""
+    """This is a class"""
     def __init__(self, size=0):
         self.size = size
 
     @property
     def size(self):
-        """return the size value"""
-            return self.__size
+        """return the size of rectagle"""
+        return self.__size
 
-    @size.Setter
-    def size(self, size):
-        """update the private attribute"""
-        if type(size) != int:
+    @size.setter
+    def size(self, value):
+        """update the sizeof a rectangle"""
+        if type(value) is not int:
             raise TypeError("size must be an integer")
-        elif size < 0:
+        if value < 0:
             raise ValueError("size must be >= 0")
-        else:
-            return self.__size = size
+        self.__size = value
 
     def area(self):
-        """return the area of rectangle"""
+        """Return the area of a rectangle"""
         return self.__size ** 2
-
