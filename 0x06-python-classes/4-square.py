@@ -5,11 +5,7 @@
 class Square:
     """check if the size match with the requerment"""
     def __init__(self, size=0):
-        self.__size = size
-
-    def area(self):
-        """return the size of square"""
-        return self.__size ** 2
+        self.size = size
 
     @property
     def size(self):
@@ -25,4 +21,8 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             return self.__size = size
+
+    def area(self):
+        """return the area of rectangle"""
+        return self.__size ** 2
 
