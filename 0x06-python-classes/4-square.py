@@ -5,7 +5,7 @@
 class Square:
     """check if the size match with the requerment"""
     def __init__(self, size=0):
-        self.size = size
+        self.__size = size
 
     def area(self):
         """return the size of square"""
