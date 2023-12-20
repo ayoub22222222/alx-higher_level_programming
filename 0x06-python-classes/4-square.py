@@ -27,7 +27,7 @@ class Square:
         else:
             return self.__size
 
-    @Setter
+    @__size.Setter
     def size(self, size):
         """update the private attribute"""
         return self.__size = size
