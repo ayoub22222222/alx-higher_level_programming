@@ -50,10 +50,11 @@ class Rectangle:
         lenght_max = max(self.__height, self.__width)
         p = (lenght_max + self.__width) * 2
         return p
+
     def __str__(self):
-        """return a human readable string"""
+        """returns printable string representation of the rectangle"""
         empty_string = ""
         if self.__width != 0 and self.__height != 0:
-            empty_string += "\n".join("#" * self.__width 
-                                     for i in range(self.__height)
+            empty_string += "\n".join("#" * self.__width
+                                for j in range(self.__height))
         return empty_string
