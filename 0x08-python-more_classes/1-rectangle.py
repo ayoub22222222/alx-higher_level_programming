@@ -8,8 +8,8 @@ name of the class as usall
 class Rectangle:
     """class that define a Rectangle with two private attribute hight and whight"""
     def __init__(self, width=0, height=0):
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
