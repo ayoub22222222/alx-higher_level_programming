@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-
-"""name of the class as usall"""
+"""
+name of the class as usall
+"""
 
 
 
