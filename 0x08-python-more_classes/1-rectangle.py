@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """
-name of the class as usall
+create a class Rectangle
 """
+
 
 
 class Rectangle:
@@ -10,6 +11,7 @@ class Rectangle:
         """initialization of a Rectangle"""
         self.height = height
         self.width = width
+
 
     @property
     def width(self):
