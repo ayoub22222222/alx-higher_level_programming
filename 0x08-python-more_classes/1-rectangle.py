@@ -4,9 +4,8 @@ name of the class as usall
 """
 
 
-
 class Rectangle:
-    """class that define a Rectangle with two private attribute hight and whight"""
+    """class that define a Rectangle"""
     def __init__(self, width=0, height=0):
         """initialization of a Rectangle"""
         self.width = width
