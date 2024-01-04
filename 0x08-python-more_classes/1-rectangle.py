@@ -5,7 +5,7 @@
 
 
 class Rectangle:
-    """ class that define a Rectangle with two private attribute hight and whight """
+    """class that define a Rectangle with two private attribute hight and whight"""
     def __init__(self, width=0, height=0):
         self.__width = width
         self.__height = height
@@ -20,7 +20,7 @@ class Rectangle:
         """set a new value to the width"""
         if type(value) != int:
             raise TypeError("width must be an integer")
-        elif value < 0:
+        if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
 
@@ -34,7 +34,7 @@ class Rectangle:
         """set a new value to the height"""
         if type(value) != int:
             raise TypeError("height must be an integer")
-        elif value < 0:
+        if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
     
