@@ -54,5 +54,6 @@ class Rectangle:
         """return a human readable string"""
         empty_string = ""
         if self.__width != 0 and self.__height != 0:
-            empty_string += "\n".join("#" * self.__width for i in range(self.__height)
+            empty_string += "\n".join("#" * self.__width 
+                                     for i in range(self.__height)
         return empty_string
