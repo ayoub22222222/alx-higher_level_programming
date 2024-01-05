@@ -6,6 +6,8 @@ Create a class Rectangle
 
 class Rectangle:
     """class that define a Rectangle"""
+    count_instance = 0
+
     def __init__(self, width=0, height=0):
         """Initialization of a Rectangle"""
         self.height = height
