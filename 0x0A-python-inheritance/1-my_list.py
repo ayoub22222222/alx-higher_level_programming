@@ -1,14 +1,18 @@
 #!/usr/bin/python3
 """
-this module is contain two class one
-iherente behvior from the other
+Module 1-my_list
+
+Contains class MyList
+inherits from list; has public instance method to print sorted
 """
 
 
-class Mylist(list):
-    """this class iherente methode
-    attribute from class list
+class MyList(list):
+    """inherits from list
+
+    methods:
+    print_sorted(self)
     """
     def print_sorted(self):
-        """print sorted list"""
-        print(sort(self))
+        """prints list of ints all sorted in ascending order"""
+        print(sorted(self))
