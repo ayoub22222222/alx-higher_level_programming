@@ -1,0 +1,54 @@
+fist things first import the module
+>>> add_integer = __import__('0-add_integer').add_integer
+success cases:
+
+test signed and unsigned int and float:
+>>> add_integer(7, 6)
+13
+>>> add_integer(1)
+99
+>>> add_integer(100, -2)
+98
+>>> add_integer(-2, -2)
+-4
+>>> add_integer(99999999999999, 10000000000)
+100009999999999
+>>> add_integer(-2, 100)
+98
+>>> add_integer(1.5, 1.5)
+2
+>>> add_integer(1.2, 17)
+18
+
+failure cases:
+>>> add_integer()
+Traceback (most recent call last):
+...
+TypeError: add_integer() missing 1 required positional argument: 'a'
+
+>>> add_integer(1, 2, 3)
+Traceback (most recent call last):
+...
+TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
+>>> add_integer(1, "hi")
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+>>> add_integer("hi", 1)
+Traceback (most recent call last):
+  ...
+TypeError: a must be an integer
+
+>>> add_integer(1 2)
+File "<stdin>", line 1
+    ...
+SyntaxError: invalid syntax
+
+>>> add_integer(b)
+Traceback (most recent call last):
+  ...
+NameError: name 'b' is not defined
+
+
