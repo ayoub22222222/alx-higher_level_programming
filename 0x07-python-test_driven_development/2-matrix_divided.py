@@ -34,10 +34,6 @@ def matrix_divided(matrix, div):
             if not isinstance(j, int):
                 raise TypeError(type_error)
 
-
-
-
-
     len_of_matrix = len(matrix[0])
     for lists in matrix:
     	if type(lists) is not list:
