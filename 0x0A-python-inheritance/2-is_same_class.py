@@ -1,4 +1,4 @@
-
+#!/usr/bin/python3
 """
 module: is_same_class
 this function check if a given object is
