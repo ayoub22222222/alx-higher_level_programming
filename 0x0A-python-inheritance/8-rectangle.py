@@ -15,6 +15,6 @@ class Rectangle(BaseGeometry):
         """this class inherent methode from
         the parent class"""
         super().integer_validator("width", width)
-        self.width = width
+        self.__width = width
         super().integer_validator("height", height)
-        self.height = height
+        self.__height = height
