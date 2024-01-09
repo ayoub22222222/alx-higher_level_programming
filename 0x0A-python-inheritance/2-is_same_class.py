@@ -12,7 +12,7 @@ def is_same_class(obj, a_class):
     and take two parameter as an argument
     args:
         parameter1: object
-        parameter2: class 
+        parameter2: class
     return:
         true or false
     """
