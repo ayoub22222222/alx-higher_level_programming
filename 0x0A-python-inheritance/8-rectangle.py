@@ -6,7 +6,11 @@ from the BaseGeometry class
 """
 
 
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+
 class Rectangle(BaseGeometry):
+    """iherent from the BaseGeometry"""
     def __init__(self, width, height):
         """this class inherent methode from
         the parent class"""
