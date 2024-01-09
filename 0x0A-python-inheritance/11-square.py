@@ -19,4 +19,4 @@ class Square(Rectangle):
         """this methode print the string representation
         of width and height"""
         return "[{:s}] {:d}/{:d}".format(self.__class__.__name__,
-                                        self.__size, self.__size)
+                                         self.__size, self.__size)
