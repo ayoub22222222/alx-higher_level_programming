@@ -3,7 +3,6 @@
 ithis module conatin a function that
 returns Json representation of obj
 """
-import json
 
 
 
@@ -14,4 +13,6 @@ def to_json_string(my_obj):
     Return:
         json string representation
     """
+    import json
+
     return json.dumps(my_obj)

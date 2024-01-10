@@ -7,7 +7,7 @@ returns int lists of pascal triangle of any given size
 
 def pascal_triangle(n):
     """
-    function that impliment teh pascla triangle   
+    function that impliment teh pascla triangle 
     """
     if n <= 0:
         return []
