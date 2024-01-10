@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-adds and save to a python objects
+adds and saves to Python obj to JSON file; loads objects
 """
 
 
