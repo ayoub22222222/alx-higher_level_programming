@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """
-
 returns int lists of pascal triangle of any given size
 """
 
