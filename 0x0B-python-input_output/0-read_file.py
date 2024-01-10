@@ -1,10 +1,8 @@
 #!/usr/bin/python3
 """
-this module contain a function
-that read from a file and put it
-to the stdout
-"""
 
+Reads and prints contents from file
+"""
 
 
 def read_file(filename=""):
