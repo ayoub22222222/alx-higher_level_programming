@@ -25,7 +25,7 @@ class Student():
 
     def to_json(self, attrs=None):
         """
-        Returns dictionary 
+        Returns dictionary
         Return:
             return dict of attrs given to us
         """
