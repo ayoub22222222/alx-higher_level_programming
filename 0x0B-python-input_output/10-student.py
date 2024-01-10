@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 """
 
-this module contain a class that return a dictionary
-representation of an object
+Contains class Student
+that initializes public instance attributes first_name, last_name, and age,
+and has public method to_json that returns dictionary representation
+of requested attributes or all if none were requested
 """
 
 
@@ -12,12 +14,13 @@ class Student():
         first_name
         last_name
         age
+
     Public Methods:
         to_json: retrieves its dictionary representation
     """
     def __init__(self, first_name, last_name, age):
         """
-        Initializes student with full_name las_name and age
+        Initializes student with full name and age
         """
         self.first_name = first_name
         self.last_name = last_name
@@ -25,12 +28,19 @@ class Student():
 
     def to_json(self, attrs=None):
         """
-        Returns dictionary
+        Returns dictionary description with simple data structure
+        (list, dictionary, dictionary, string)
+        for JSON serialization of an object
+
+        Return:
+            Only return dict of attrs given to us
+            Return entire dict if no attrs given
         """
-	if attrs is None:
-		return self.__dict__
-	else:
-	     dic = {}
-	     for i in self.__dict__.key():
-		dic[i] = self.__dict__[i]
-	     return dic
+        if attrs is None:
+            return self.__dict__
+        else:
+            dic = {}
+            for att in attrs:
+                if att in self.__dict__.keys():
+                    dic[att] = self.__dict__[att]
+            return dic
