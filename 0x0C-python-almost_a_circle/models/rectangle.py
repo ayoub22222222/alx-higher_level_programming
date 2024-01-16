@@ -22,7 +22,7 @@ class Rectangle(Base):
         self.width = width
         self.x = x
         self.y = y
-        super().__init__(self, id)
+        super().__init__(id)
 
     @property
     def get_value_height(self):
