@@ -95,5 +95,6 @@ class Rectangle(Base):
     def __str__(self):
         """return string representation of the object including id, height,
         width, x, and y value"""
-        return f"[{self.__class__.name}] ({self.id}) {self.__x}/{self.__y} \
-        - {self.__height}/{self.__width}"
+        return "[{:s}] ({:d}) {:d}/{:d} - {:d}/{:d}".format(
+            self.__class__.__name__, self.id, self.__x, self.__y,
+            self.__width, self.__height)
