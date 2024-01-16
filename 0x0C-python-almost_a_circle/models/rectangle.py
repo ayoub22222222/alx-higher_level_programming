@@ -25,12 +25,12 @@ class Rectangle(Base):
         super().__init__(id)
 
     @property
-    def get_value_height(self):
+    def height(self):
         """return the height value"""
         return self.__height
 
     @height.setter
-    def get_value_height(self, value):
+    def height(self, value):
         """update the height value"""
         if type(value) != int:
             raise TypeError("value must be integer")
@@ -39,12 +39,12 @@ class Rectangle(Base):
         self.__height = value
 
     @property
-    def get_value_width(self):
+    def width(self):
         """return the current value of width"""
         return self.__width
 
     @width.setter
-    def get_value_width(self, value):
+    def width(self, value):
         """update the width value"""
         if type(value) != int:
             raise TypeError("value must be integer")
@@ -53,12 +53,12 @@ class Rectangle(Base):
         self.__width = value
 
     @property
-    def get_value_x(self):
+    def x(self):
         """return the current value"""
         return self.__x
 
     @x.setter
-    def get_value_x(self, value):
+    def x(self, value):
         """update the x vaue"""
         if type(value) != int:
             raise TypeError("value must be integer")
@@ -67,12 +67,12 @@ class Rectangle(Base):
         self.__x = value
 
     @property
-    def get_value_y(self):
+    def y(self):
         """return the current value of y"""
         return self.__y
 
     @y.setter
-    def get_value_y(self, value):
+    def y(self, value):
         """update the y value"""
         if type(value) != int:
             raise TypeError("vaue must be integer")
