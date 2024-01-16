@@ -34,7 +34,8 @@ class Base:
             list_dictionaries = []
 
         return json.dumps(list_dictionaries)
-        @staticmethod
+
+    @staticmethod
     def from_json_string(json_string):
         """Returns Python obj of JSON string representation"""
         if json_string is None or len(json_string) == 0:
