@@ -34,9 +34,9 @@ class Rectangle(Base):
         """update the height value"""
         if type(value) != int:
             raise TypeError("value must be integer")
-        if value <= 0:
+        if value < 0:
             raise TypeError("value must be > 0")
-        return self.__height = value
+        self.__height = value
 
     @property
     def get_value_width(self):
@@ -48,9 +48,9 @@ class Rectangle(Base):
         """update the width value"""
         if type(value) != int:
             raise TypeError("value must be integer")
-        if value <= 0:
+        if value < 0:
             raise TypeError("value must be > 0")
-        return self.__width = value
+        self.__width = value
 
     @property
     def get_value_x(self):
@@ -62,9 +62,9 @@ class Rectangle(Base):
         """update the x vaue"""
         if type(value) != int:
             raise TypeError("value must be integer")
-        if value <= 0:
+        if value < 0:
             raise TypeError("value must be > 0")
-        return self.__x = value
+        self.__x = value
 
     @property
     def get_value_y(self):
@@ -76,6 +76,6 @@ class Rectangle(Base):
         """update the y value"""
         if type(value) != int:
             raise TypeError("vaue must be integer")
-        if value <= 0:
+        if value < 0:
             raise TypeError("vaue must be > 0")
-        return self.__y = value
+        self.__y = value
