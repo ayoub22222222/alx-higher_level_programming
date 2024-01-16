@@ -34,7 +34,7 @@ class Rectangle(Base):
         """update the height value"""
         if type(value) != int:
             raise TypeError("value must be integer")
-        if value < 0:
+        if value <= 0:
             raise TypeError("value must be > 0")
         return self.__height = value
 
@@ -48,7 +48,7 @@ class Rectangle(Base):
         """update the width value"""
         if type(value) != int:
             raise TypeError("value must be integer")
-        if value < 0:
+        if value <= 0:
             raise TypeError("value must be > 0")
         return self.__width = value
 
@@ -60,7 +60,7 @@ class Rectangle(Base):
     @x.setter
     def get_value_x(self, value):
         """update the x vaue"""
-        if tpe(vaue) != int:
+        if type(value) != int:
             raise TypeError("value must be integer")
         if value <= 0:
             raise TypeError("value must be > 0")
@@ -74,7 +74,7 @@ class Rectangle(Base):
     @y.setter
     def get_value_y(self, value):
         """update the y value"""
-        if type(vaue) != int:
+        if type(value) != int:
             raise TypeError("vaue must be integer")
         if value <= 0:
             raise TypeError("vaue must be > 0")
