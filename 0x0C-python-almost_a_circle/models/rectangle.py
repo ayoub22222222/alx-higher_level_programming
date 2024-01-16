@@ -3,7 +3,7 @@
 Rectangle that inherente from
 the Base class
 """
-from modules.base import Base
+from models.base import Base
 
 
 
