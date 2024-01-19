@@ -75,3 +75,6 @@ class TestBaseClass(unittest.TestCase):
         syn = Base($)
         with self.assertRaises(SyntaxError):
             print(Base($).id)
+
+if __name__ == "__main__":
+    unittest.main()
