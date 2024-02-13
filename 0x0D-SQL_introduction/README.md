@@ -1,6 +1,7 @@
 # SQL - Introduction
 
-![images](https://github.com/ayoub22222222/alx-higher_level_programming/assets/79339502/46a03f5b-73cb-481f-a16e-02886a177780)
+![mysql](https://github.com/ayoub22222222/alx-higher_level_programming/assets/79339502/6a900f02-2a68-46e1-9752-bc21938a2744)
+
 
 ## Description
 A SQL database, or Structured Query Language database, is a type of relational database management system (RDBMS) that uses SQL as its primary interface for querying and manipulating data. SQL databases organize data into tables, which consist of rows and columns, following a tabular structure.
