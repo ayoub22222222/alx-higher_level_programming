@@ -22,7 +22,11 @@ Key characteristics of SQL databases include:
 
 ## Environment
 
-## Environment
-
 ## Installation
+
+## File descriptions
+
+## Execution
+
+## Licence
 
