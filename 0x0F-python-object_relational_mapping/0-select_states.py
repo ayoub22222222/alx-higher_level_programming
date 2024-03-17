@@ -9,12 +9,11 @@ from sys import argv
 
 if __name__ == "__main__":
                         
-    in_put = sys.argv
     db = MySQLdb.connect(host= "localhost",
             port=3306, 
-            user=in_put[1], 
-            passwd=in_put[2], 
-            db=in_put[3])
+            user=argv[1], 
+            passwd=argv[2], 
+            db=argv[3])
 
     curr = db.cursor()
 
