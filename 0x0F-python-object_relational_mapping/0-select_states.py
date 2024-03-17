@@ -13,12 +13,11 @@ if __name__ == "__main__":
             port=3306, 
             user=argv[1], 
             passwd=argv[2], 
-            db=argv[3],
-            charset="utf8")
+            db=argv[3])
 
     curr = db.cursor()
 
-    curr.execute("SELECT * FROM states ORDER BY states.id ASC")
+    curr.execute("SELECT * FROM states")
     for i in curr.fetchall():
         print(i)
     curr.close()
