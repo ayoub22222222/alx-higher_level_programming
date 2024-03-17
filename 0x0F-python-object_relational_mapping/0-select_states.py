@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+this file is connecting us to database
+and fetchall the states element
+"""
 
 import MySQLdb
 from sys import argv
@@ -13,9 +17,8 @@ if __name__ == "__main__":
 
     curr = db.cursor()
 
-    curr.execute("SELECT * FROM states ORDER BY id ASC")
+    curr.execute("SELECT * FROM states ORDER BY states.id ASC")
     for i in curr.fetchall():
         print(i)
-
     curr.close()
     db.close()
