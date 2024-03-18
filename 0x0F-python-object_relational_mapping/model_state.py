@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-"""description file"""
+"""description file that link an object class to data base using sqlalchemy"""
 from sqlalchemy import Column, Integer, String, MetaData
 from sqlalchemy.ext.declarative import declarative_base
 
 
 mt = MetaData()
-Base = declarative_base(mt)
+Base = declarative_base(metadata=mt)
 
 
 class State(Base):
