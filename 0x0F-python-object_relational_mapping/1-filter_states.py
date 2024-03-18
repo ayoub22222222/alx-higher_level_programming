@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-decription of the task
-"""
+""" script that lists all states with a name starting with N """
 import MySQLdb
 import sys
 
@@ -11,8 +9,8 @@ if __name__ == "__main__":
                          passwd=sys.argv[2], db=sys.argv[3], port=3306)
 
     curr = db.cursor()
-    curr.execute("""SELECT * FROM states WHERE name 
-                 LIKE BINARY 'N%' ORDER BY states.id""")
+    curr.execute("""SELECT * FROM states WHERE name
+                  LIKE BINARY 'N%' ORDER BY states.id""")
     elements = curr.fetchall()
     for element in elements:
         print(element)
