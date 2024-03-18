@@ -1,15 +1,18 @@
 #!/usr/bin/python3
-"""description file that link an object class to data base using sqlalchemy"""
+"""
+Contains State class and Base, an instance of declarative_base()
+"""
 from sqlalchemy import Column, Integer, String, MetaData
 from sqlalchemy.ext.declarative import declarative_base
 
-
-mt = MetaData()
-Base = declarative_base(metadata=mt)
+mymetadata = MetaData()
+Base = declarative_base(metadata=mymetadata)
 
 
 class State(Base):
-    """description of the class"""
+    """
+    Class with id and name attributes of each state
+    """
     __tablename__ = 'states'
-    id = column(Integer, unique=True, nullable=False, primary_key=True)
-    name = column(String(128), nullable=False)
+    id = Column(Integer, unique=True, nullable=False, primary_key=True)
+    name = Column(String(128), nullable=False)
