@@ -12,7 +12,7 @@ if __name__ == "__main__":
     curr = db.cursor()
     curr.execute("SELECT * FROM states")
     elements = curr.fetchall()
-    for i in elements:
-        print(i)
+    for element in elements:
+        print(element)
     curr.close()
     db.close()
