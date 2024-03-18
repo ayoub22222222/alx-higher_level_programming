@@ -14,5 +14,5 @@ if __name__ == "__main__":
     elements = cur.fetchall()
     for element in elements:
         print(element)
-    curr.close()
+    cur.close()
     db.close()
