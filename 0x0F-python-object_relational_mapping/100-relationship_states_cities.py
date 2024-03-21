@@ -8,7 +8,7 @@ from sqlalchemy.orm import sessionmaker
 
 if __name__ == "__main__":
     
-    cn_db = 'mysql://{}:{}@localhost:3306/{}'.format(argv[1], argv[2], argv[3])
+    cn_db = 'mysql+mysqldb://{}:{}@localhost:3306/{}'.format(argv[1], argv[2], argv[3])
     engine = create_engine(cn_db, pool_pre_ping=True)
 
     Base.metadata.cerate_all(engine)
