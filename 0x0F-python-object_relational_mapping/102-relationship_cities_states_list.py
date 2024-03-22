@@ -18,5 +18,5 @@ if __name__ == "__main__":
 
     for i in session.query(State).order_by(State.id):
         for j in i.cities:
-            print(j.id, i.name, sep=": ", end="")
-            print(" -> " + i.name)
+            print(j.id, j.name, sep=": ", end="")
+            print(" -> " + instance.name)
