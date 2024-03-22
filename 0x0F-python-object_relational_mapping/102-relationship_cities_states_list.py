@@ -19,4 +19,4 @@ if __name__ == "__main__":
     for i in session.query(State).order_by(State.id):
         for j in i.cities:
             print(j.id, j.name, sep=": ", end="")
-            print(" -> " + instance.name)
+            print(" -> " + i.name)
