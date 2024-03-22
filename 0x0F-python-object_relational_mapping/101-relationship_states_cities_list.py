@@ -20,4 +20,4 @@ if __name__ == "__main__":
         print(i.id, i.name, sep=": ")
         for j in i.cities:
             print("    ", end="")
-            print(city_ins.id, city_ins.name, sep=": ")
+            print(j.id, j.name, sep=": ")
