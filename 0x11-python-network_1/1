@@ -1,7 +1,0 @@
-#!/usr/bin/python3
-"""description"""
-
-import requests
-
-r = requests.get("https://alx-intranet.hbtn.io/status")
-print(r.encode('utf-8'))
